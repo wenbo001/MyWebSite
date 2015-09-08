@@ -1,0 +1,746 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);*/
+
+/**  Basic Page CSS **/
+body{
+/*  font-family: "Roboto Slab", sans-serif;*/
+  font-weight: 300;
+  font-size: 2em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+/*  font-family: "Open Sans", sans-serif;*/
+  font-weight: 100;
+  margin: 0;
+}
+
+.mytype {
+	position: absolute;
+    top: 35%;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.myhoi{
+    font-size: 8em;
+    font-weight: 500;
+}
+.h1 {
+    font-size: 2.4em;
+}
+.type-wrap {
+    margin-top: 15px;
+    font-size: 2em;   
+}
+.upcontrol {
+	text-align: center;
+}
+
+.downcontrol {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+.downcontrol a, .upcontrol a{
+    color: gray;
+}
+.downcontrol:hover a, .upcontrol:hover a{
+    color: orange;
+
+}
+
+/**  Header Navigation **/
+
+header .navbar {
+  padding: 30px 0;
+  transition: all .5s ease-out;
+}
+
+header .navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+header .navbar-default .navbar-nav a {
+  color: white;
+  padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #EEC856;
+}
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #EEC856;
+  background: transparent;
+  border
+    : 4px solid #EEC856;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none;
+}
+
+/**  Navbar Brand **/
+
+header .navbar-brand {
+  background-repeat: no-repeat;
+  background-position: 15px 0;
+  height: auto;
+}
+
+header .navbar-brand h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-left: 105px;
+}
+
+header .navbar-brand span.subhead {
+  display: block;
+/*  font-family: "Roboto Slab", serif;*/
+  font-size: .6em;
+  font-weight: 100;
+}
+
+/** logo **/
+.oo {
+	position:absolute;
+	margin: -15px;
+}
+
+.circle {
+position:absolute;
+display: inline-block;
+height: 80px;
+width: 80px;
+-moz-border-radius: 100%; 
+-webkit-border-radius: 100%; 
+border-radius: 100%;
+border:solid black 15px;
+background-color: white;
+}
+/*shu*/
+.cirver {
+position:absolute;
+left:35px;
+top:3px;
+width: 20px; 
+height: 84px; 
+background: black; 
+}
+/*heng*/
+.cirhor
+{
+position:absolute;
+top:42px;
+left:-5px;
+width: 90px; 
+height: 24px; 
+background: black;
+}
+
+header .inbody .circle {
+    
+    width: 40px; 
+    height: 40px;
+    border:solid black 7.5px;
+}
+
+header .inbody .cirver {
+    left:17.5px;
+    width: 10px; 
+    height: 42px;
+}
+
+header .inbody .cirhor {
+    top: 21px;
+    left: -2.5px;
+    width: 45px;
+    height: 12px;
+}
+
+/**  Navbar Toggle **/
+header .navbar-toggle {
+  background-color: #f8941d;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/**  nav inbody **/
+
+header .inbody {
+  background: rgba(248,148,29,.9);
+}
+
+header .navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+  padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+  font-size: 1.1em;
+  padding-left: 38px;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
+/**  Page **/
+.page {
+  padding: 50px 0;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/**  Page -- Mission **/
+#mymission {
+    background: #fff;
+    color: gray;
+}
+
+#mymission .myicon {
+    text-align: center;   
+}
+
+
+/**  Page -- Services **/
+
+#myservice {
+    background: #fff;
+    color: gray;
+}
+}
+.service {
+  margin: 20px 0;
+  text-align: center;
+  
+}
+
+#myservice img.icon {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+#myservice h3 {
+  margin-bottom: 10px;
+}
+
+#myservice .myprogramming {
+    text-align: center;   
+}
+
+#myservice .mysoftware {
+    text-align: center;   
+}
+
+/**  Page -- Staff **/
+
+#myportfolio {
+  color: gray;
+  background-color: #fff;
+}
+
+.doctor {
+  margin: 10px 0;
+}
+
+.doctor h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
+.doctor p {
+  font-size: .8em;
+}
+
+.doctor {
+    position: relative;
+    display: inline-block; /* added */
+    overflow: hidden; /* added */
+}
+
+.doctor img {width:100%;} /* remove if using in grid system */
+
+.doctor img:hover {
+    opacity: 0.5
+}
+.doctor:hover a {
+    opacity: 1; /* added */
+    top: 0; /* added */
+    z-index: 500;
+}
+/* added */
+.doctor:hover a span {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+/* added */
+.doctor a {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: inherit;
+}
+
+
+/**  Page -- Testimonials **/
+
+#testimonials {
+  color: gray;
+  background-color: #fff;
+}
+
+#testimonials blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#testimonials blockquote .quote {
+  background-color: rgba(255,255,255,.6);
+  padding: 20px 5%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  font-weight: 400;
+  border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+  background-color: rgba(239,240,196,.9);
+}
+
+#testimonials .quote {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+/*link 1*/
+#janeh :hover #testspana {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#janeh #testspana {
+    display: none;
+}
+
+/*link 2*/
+#johnb :hover #testspanc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#johnb #testspanc {
+    display: none;
+}
+
+/*link 3*/
+#mcphersons :hover #testspanb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#mcphersons #testspanb {
+    display: none;
+}
+
+/*link 4*/
+#lorraines :hover #testspand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#lorraines #testspand {
+    display: none;
+}
+
+/*more text*/
+#testimonials .quote .more, #testimonials .customer {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#testimonials .quote:hover .more {
+/*  font-family: "Open Sans", sans-serif;*/
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#testimonials .quote:hover .testspan{
+    opacity: 0;
+   
+}
+
+#testimonials .quote:hover .customer {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#testimonials .quote .intro::after {
+  content: '...';
+}
+
+#testimonials .quote:hover .intro::after {
+  content: '';
+}
+
+/**  FindMe page **/
+#mycontact {
+    color: gray;
+    background-color: #fff;
+}
+
+.find p {
+ padding-top: 15px;   
+}
+.quick-info {
+    text-align: center;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quick-info p {
+    padding-top: 15px;
+}
+.quick-info a {
+ color: gray;
+}
+.quick-info a:hover {
+ color: orange;
+}
+.light-box {
+ background-color: white;
+ padding: 55px;
+}
+/**  Footer **/
+
+footer {
+  background-color: #f8941d;
+  color: gray;
+  font-size: .8em;
+  padding: 20px 0 40px 0;
+  text-align: left;
+}
+
+footer a {
+  color: #E0E6AE;
+}
+
+footer a:hover {
+  color: #EEC856 !important;
+}
+
+/*
+footer .phone {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #E0E6AE;
+}
+*/
+
+footer .navbar {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+footer .navbar-default {
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+}
+
+
+footer .navbar-nav>li.facebook a {
+	width: 80px;
+	background-color: #3d5998 !important;
+	color: #fff !important;
+	font-size: 1.8em;
+	text-align: center;
+	text-shadow: none;
+	border: none;
+}
+
+footer .navbar-nav>li.linkedin a {
+	width: 80px;
+	background-color: #2387ba !important;
+	color: #fff !important;
+	font-size: 1.8em;
+	text-align: center;
+	text-shadow: none;
+	border: none;
+}
+
+footer .navbar-nav>li.facebook a:hover,
+footer .navbar-nav>li.linkedin a:hover{
+	opacity: .6;
+}
+
+
+
+/*type*/
+
+.typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+/*aniamte*/
+.navbar {
+  -webkit-animation-delay: .2s;
+}
+#myhome {
+  -webkit-animation-delay: 1s;
+}
+.wrap {
+  -webkit-animation-delay: 1.3s;
+
+}
+
+/*thumbnail*/
+.thumbnail {
+	background-color: transparent;
+	border: none;
+}
+
+.thumbnail h3 {
+	color: white;
+	font-size: 1.2em;
+}
+.star {
+ color: wheat;
+}
+
+.btn-primary { 
+    background-color: gray; 
+    border-color: gray; 
+}  
+.btn-primary:hover, 
+.btn-primary:focus,  
+.btn-primary:active { 
+    background-color: black; 
+} 
+
+.modal-body .pull-left { 
+    padding-right: 1em; 
+} 
+.modal-body .pull-right { 
+    padding-left: 1em; 
+}
+.modal-body p {
+	display: block;
+	color: gray;
+	text-align: left;
+}
+.modal-footer { 
+    clear: both; 
+} 
+
+/*form*/
+.form-horizontal .control-label {
+    text-align: left;  
+}
+.myformbtn {
+    text-align: right;   
+}
+/*@media*/
+
+/*header*/
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+  }
+}
+/*homepage*/
+@media only screen
+and (max-width: 768px) {
+.myhoi{
+    font-size: 8em;
+    font-weight: 500;
+}
+.h1 {
+    font-size: 1.5em;
+}
+.type-wrap {
+    margin-top: 15px;
+    font-size: 1em;   
+}
+}
+
+@media only screen 
+and (min-width: 450px)
+and (max-width: 768px) {
+   .type-wrap {
+    margin-top: 15px;
+    font-size: 1.5em;   
+} 
+}
+
+@media only screen 
+and (min-width: 450px)
+and (max-width: 768px) {
+  .service p {
+    padding: 0 20%;
+  }
+}
+
+/*footer*/
+@media (max-width:768px) {
+	footer .navbar-nav>li.facebook a,footer .navbar-nav>li.linkedin a {
+		width: 100%;
+	}
+	footer .navbar-default{
+		margin: 0;
+	}
+}
