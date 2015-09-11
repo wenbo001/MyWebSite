@@ -17,7 +17,9 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-indicators{
 display: none;
 }
-
+.downcontrol {
+    display: none;
+}
 .mytype {
 	position: absolute;
     top: 35%;
@@ -720,6 +722,7 @@ and (max-width: 768px) {
     margin-top: 15px;
     font-size: 1em;   
 }
+
 }
 
 @media only screen 
@@ -729,9 +732,7 @@ and (max-width: 768px) {
     margin-top: 15px;
     font-size: 1.5em;   
 } 
-.downcontrol {
-    display: none;
-}
+
     .h1{
        font-size: 1.2em; 
     }
@@ -739,13 +740,19 @@ and (max-width: 768px) {
 
 @media only screen
 and (max-width: 450px) {
-.downcontrol {
-    display: none;
-}
+
     .h1{
        font-size: 1em; 
     }
 
+}
+
+@media only screen
+and (max-height:450px) {
+    .myhoi{
+    font-size: 3em;
+    font-weight: 350;
+    }   
 }
 
 @media only screen 
