@@ -318,7 +318,7 @@ $(document).ready(function () {
 		var col = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
 		$(this).css("background-color", col);
 	}, function () { //mouseout
-		$(this).css("background-color", "white");
+		//$(this).css("background-color", "white");
 	});
 	//logo color end
     
