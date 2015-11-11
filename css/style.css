@@ -597,8 +597,20 @@ footer .navbar-nav>li.linkedin a {
 	border: none;
 }
 
+footer .navbar-nav>li.github a {
+	width: 80px;
+	background-color: #333333 !important;
+	color: #fff !important;
+	font-size: 1.8em;
+	text-align: center;
+	text-shadow: none;
+	border: none;
+}
+
 footer .navbar-nav>li.facebook a:hover,
-footer .navbar-nav>li.linkedin a:hover{
+footer .navbar-nav>li.linkedin a:hover,
+footer .navbar-nav>li.github a:hover
+{
 	opacity: .6;
 }
 
@@ -765,7 +777,7 @@ and (max-width: 768px) {
 
 /*footer*/
 @media (max-width:768px) {
-	footer .navbar-nav>li.facebook a,footer .navbar-nav>li.linkedin a {
+	footer .navbar-nav>li.facebook a,footer .navbar-nav>li.linkedin a,footer .navbar-nav>li.github a {
 		width: 100%;
 	}
 	footer .navbar-default{
