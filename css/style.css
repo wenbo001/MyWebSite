@@ -503,7 +503,7 @@ header .inbody .navbar-brand span.subhead {
 
 #testimonials .quote:hover .more{
 /*  font-family: "Open Sans", sans-serif;*/
-  font-weight: 100;
+  font-weight: 101;
   display: block;
   opacity: 1;
   font-size: .8em;
