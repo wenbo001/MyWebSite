@@ -5,7 +5,7 @@
 	}
 	
 	// Add and remove no-hover class to <li>'s for mobile hover events
-	jQuery('.touch .container').each(function() {
+	jQuery('.touch .mytouch').each(function() {
 		var div = jQuery(this);
 		
 		div.hover(function() {
