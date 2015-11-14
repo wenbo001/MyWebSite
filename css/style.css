@@ -118,7 +118,7 @@ header .navbar-brand {
 }
 
 header .navbar-brand h1 {
-  color: #fff;
+  color: #fff !important;
   margin: 0;
   font-size: 1.8em;
   font-weight: 400;
