@@ -1,22 +1,34 @@
 //hover mobile
-// Add no-touch class to body for mobile touch events and toggle hover class on elements that need it
-	if ("ontouchstart" in document.documentElement) {
-		document.documentElement.className += " touch";
-	}
-	
-	// Add and remove no-hover class to <li>'s for mobile hover events
-	jQuery('.touch .mytouch').each(function() {
-		var div = jQuery(this);
-		
-		div.hover(function() {
-			div.removeClass('no-hover');
-		});
-		
-		jQuery('*').not(div).bind('click', function() {
-			div.addClass('no-hover');
-		});
-		
-	});
+//// Add no-touch class to body for mobile touch events and toggle hover class on elements that need it
+//	if ("ontouchstart" in document.documentElement) {
+//		document.documentElement.className += " touch";
+//	}
+//	
+//	// Add and remove no-hover class to <li>'s for mobile hover events
+//	jQuery('.touch .mytouch').each(function() {
+//		var div = jQuery(this);
+//		
+//		div.hover(function() {
+//			div.removeClass('no-hover');
+//		});
+//		
+//		jQuery('*').not(div).bind('click', function() {
+//			div.addClass('no-hover');
+//		});
+//		
+//	});
+$('mytouch').on("touchstart", function (e) {
+    'use strict'; //satisfy code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass('hover');
+        $('mytouch').not(this).removeClass('hover');
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
 
 //add video
 $(function() {
