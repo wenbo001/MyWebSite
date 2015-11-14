@@ -577,6 +577,7 @@ footer a {
 
 footer a:hover{
   color: #EEC856 !important;
+  text-decoration: none;
 }
 
 /*
