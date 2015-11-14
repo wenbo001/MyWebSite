@@ -12,10 +12,12 @@ $('.myclosebtn').click(function(){
         $('.myvideoh').get(0).pause();
         $('.myvideoi').get(0).pause();
         $('.myvideoj').get(0).pause();
+	    $('.myvideok').get(0).pause();
+
     });
 });
 
-$(function() {
+$(function(){
 
   "use strict";
 
