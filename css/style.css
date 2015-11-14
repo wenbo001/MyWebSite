@@ -61,7 +61,7 @@ display: none;
 .downcontrol a, .upcontrol a{
     color: gray;
 }
-.downcontrol:hover a, .upcontrol:hover a{
+.downcontrol:hover a, .upcontrol:hover a,.downcontrol:focus a, .upcontrol:focus a{
     color: orange;
 
 }
@@ -83,7 +83,7 @@ header .navbar-default .navbar-nav a {
   padding: 5px 8px;
 }
 
-header .navbar-default .navbar-nav a:hover {
+header .navbar-default .navbar-nav a:hover,header .navbar-default .navbar-nav a:focus {
   color: #EEC856;
 }
 
@@ -96,7 +96,7 @@ header .navbar-default .navbar-nav .active a {
   text-shadow: none;
 }
 
-header .navbar-default .navbar-nav .active a:hover {
+header .navbar-default .navbar-nav .active a:hover,header .navbar-default .navbar-nav .active a:focus {
   color: #E15D5F;
   background: transparent;
   text-shadow: none;
@@ -349,16 +349,16 @@ header .inbody .navbar-brand span.subhead {
 
 .doctor img {width:100%;} /* remove if using in grid system */
 
-.doctor img:hover {
+.doctor img:hover,.doctor img:focus {
     opacity: 0.5
 }
-.doctor:hover a {
+.doctor:hover a,.doctor:focus a  {
     opacity: 1; /* added */
     top: 0; /* added */
     z-index: 500;
 }
 /* added */
-.doctor:hover a span {
+.doctor:hover a span,.doctor:focus a span {
     top: 50%;
     position: absolute;
     left: 0;
@@ -404,7 +404,7 @@ header .inbody .navbar-brand span.subhead {
   border-radius: 0 50px 0 0;
 }
 
-#testimonials blockquote .quote:hover {
+#testimonials blockquote .quote:hover,#testimonials blockquote .quote:focus {
   background-color: rgba(239,240,196,.9);
 }
 
@@ -415,7 +415,7 @@ header .inbody .navbar-brand span.subhead {
 }
 
 /*link 1*/
-#janeh :hover #testspana {
+#blockquotea :hover #testspana,#blockquotea :focus #testspana {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -424,12 +424,12 @@ header .inbody .navbar-brand span.subhead {
     z-index: 500;
     opacity: 1; /* added */
 }
-#janeh #testspana {
+#blockquotea #testspana {
     display: none;
 }
 
 /*link 2*/
-#johnb :hover #testspanc {
+#blockquotec :hover #testspanc,#blockquotec :focus #testspanc {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -438,12 +438,12 @@ header .inbody .navbar-brand span.subhead {
     z-index: 500;
     opacity: 1; /* added */
 }
-#johnb #testspanc {
+#blockquotec #testspanc {
     display: none;
 }
 
 /*link 3*/
-#mcphersons :hover #testspanb {
+#blockquoteb :hover #testspanb,#blockquoteb :focus #testspanb {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -452,12 +452,12 @@ header .inbody .navbar-brand span.subhead {
     z-index: 500;
     opacity: 1; /* added */
 }
-#mcphersons #testspanb {
+#blockquoteb #testspanb {
     display: none;
 }
 
 /*link 4*/
-#lorraines :hover #testspand {
+#blockquoted :hover #testspand,#blockquoted :focus #testspand {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -466,9 +466,24 @@ header .inbody .navbar-brand span.subhead {
     z-index: 500;
     opacity: 1; /* added */
 }
-#lorraines #testspand {
+#blockquoted #testspand {
     display: none;
 }
+
+/*link 5*/
+#blockquotee :hover #testspana,#blockquotee :focus #testspana {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#blockquotee #testspana {
+    display: none;
+}
+
 
 /*more text*/
 #testimonials .quote .more, #testimonials .customer {
@@ -479,7 +494,7 @@ header .inbody .navbar-brand span.subhead {
 }
 
 
-#testimonials .quote:hover .more {
+#testimonials .quote:hover .more,#testimonials .quote:focus .more {
 /*  font-family: "Open Sans", sans-serif;*/
   font-weight: 100;
   display: block;
@@ -488,12 +503,12 @@ header .inbody .navbar-brand span.subhead {
   line-height: 120%;
 }
 
-#testimonials .quote:hover .testspan{
+#testimonials .quote:hover .testspan,#testimonials .quote:focus .testspan {
     opacity: 0;
    
 }
 
-#testimonials .quote:hover .customer {
+#testimonials .quote:hover .customer,#testimonials .quote:focus .customer {
   display: block;
   font-size: .7em;
   text-align: right;
@@ -503,7 +518,7 @@ header .inbody .navbar-brand span.subhead {
   content: '...';
 }
 
-#testimonials .quote:hover .intro::after {
+#testimonials .quote:hover .intro::after,#testimonials .quote:focus .intro::after {
   content: '';
 }
 
@@ -532,7 +547,7 @@ header .inbody .navbar-brand span.subhead {
 .quick-info a {
  color: gray;
 }
-.quick-info a:hover {
+.quick-info a:hover,.quick-info a:focus {
  color: orange;
 }
 .light-box {
@@ -553,7 +568,7 @@ footer a {
   color: #E0E6AE;
 }
 
-footer a:hover {
+footer a:hover,footer a:focus {
   color: #EEC856 !important;
 }
 
@@ -609,7 +624,10 @@ footer .navbar-nav>li.github a {
 
 footer .navbar-nav>li.facebook a:hover,
 footer .navbar-nav>li.linkedin a:hover,
-footer .navbar-nav>li.github a:hover
+footer .navbar-nav>li.github a:hover,
+footer .navbar-nav>li.facebook a:focus,
+footer .navbar-nav>li.linkedin a:focus,
+footer .navbar-nav>li.github a:focus
 {
 	opacity: .6;
 }
