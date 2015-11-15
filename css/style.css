@@ -630,9 +630,20 @@ footer .navbar-nav>li.github a {
 	border: none;
 }
 
+footer .navbar-nav>li.vimeo a {
+	width: 80px;
+	background-color: #1ab7ea !important;
+	color: #fff !important;
+	font-size: 1.8em;
+	text-align: center;
+	text-shadow: none;
+	border: none;
+}
+
 footer .navbar-nav>li.facebook a:hover,
 footer .navbar-nav>li.linkedin a:hover,
-footer .navbar-nav>li.github a:hover
+footer .navbar-nav>li.github a:hover,
+footer .navbar-nav>li.vimeo a:hover
 {
 	opacity: .6;
 }
