@@ -802,7 +802,7 @@ and (max-width: 768px) {
 
 /*footer*/
 @media (max-width:768px) {
-	footer .navbar-nav>li.facebook a,footer .navbar-nav>li.linkedin a,footer .navbar-nav>li.github a {
+	footer .navbar-nav>li.facebook a,footer .navbar-nav>li.linkedin a,footer .navbar-nav>li.github a ,footer .navbar-nav>li.vimeo a{
 		width: 100%;
 	}
 	footer .navbar-default{
