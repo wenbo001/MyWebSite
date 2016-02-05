@@ -28,11 +28,6 @@ $('.myclosebtn').click(function(){
         $('.myvideod').get(0).pause();
         $('.myvideoe').get(0).pause();
         $('.myvideof').get(0).pause();
-        $('.myvideog').get(0).pause();
-        $('.myvideoh').get(0).pause();
-        $('.myvideoi').get(0).pause();
-        $('.myvideoj').get(0).pause();
-	    $('.myvideok').get(0).pause();
 
     });
 });
