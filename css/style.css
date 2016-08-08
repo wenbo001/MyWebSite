@@ -156,17 +156,24 @@ left:35px;
 top:3px;
 width: 20px; 
 height: 84px; 
-background: black; 
+background: black; 	
 }
 /*heng*/
 .cirhor
 {
 position:absolute;
 top:42px;
-left:-5px;
+left:-10px;
+/*
 width: 90px; 
 height: 24px; 
 background: black;
+*/
+	border-bottom: 25px solid black;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 100px;
 }
 
 header .inbody .circle {
@@ -183,10 +190,19 @@ header .inbody .cirver {
 }
 
 header .inbody .cirhor {
+/*
     top: 21px;
     left: -2.5px;
     width: 45px;
     height: 12px;
+*/
+top:21px;
+left:-5px;
+border-bottom: 12.5px solid black;	
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+height: 0;
+width: 50px;
 }
 
 /**  Navbar Toggle **/
