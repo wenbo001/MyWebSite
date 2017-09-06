@@ -249,6 +249,16 @@ $(function(){
         },1000);
          
      }
+      if((state)&&(hash == '#myart')){
+        $( "#myart" ).animate({
+          backgroundColor: "#000 "
+        },1000);
+      }else{
+        $( "#testimonials" ).animate({
+          backgroundColor: "#fff"
+        },1000);
+         
+     }
     if((state)&&(hash == '#mycontact')){
         $( "#mycontact" ).animate({
           backgroundColor: "#000 "
@@ -298,7 +308,7 @@ $(function(){
 //typed start
 $(function () {
 	$(".typed").typed({
-		strings: ["I am Wenbo Liu, ", "A creative developer ! ", "I make my ideas come true, ", "I make your ideas come true, ", "I make our ideas come true !"],
+		strings: ["I am Wenbo Liu, ", "A creative designer and developer ! ", "I make my ideas come true, ", "I make your ideas come true, ", "I make our ideas come true !"],
 		contentType: 'html',
 		typeSpeed: 100,
 		startDelay: 0,

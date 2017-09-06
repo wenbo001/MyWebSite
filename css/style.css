@@ -436,6 +436,40 @@ header .inbody .navbar-brand span.subhead {
   line-height: 110%;
   font-weight: 400;
 }
+/**  Page -- myart **/
+
+#myart {
+  color: gray;
+  background-color: #fff;
+}
+
+#myart blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#myart blockquote .quote {
+  background-color: rgba(255,255,255,.6);
+  padding: 20px 5%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  font-weight: 400;
+  border-radius: 0 50px 0 0;
+}
+
+#myart blockquote .quote:hover{
+  background-color: rgba(239,240,196,.9);
+}
+
+#myart .quote {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
 
 /*link 1*/
 #blockquotea :hover #testspana{
@@ -542,6 +576,43 @@ header .inbody .navbar-brand span.subhead {
 }
 
 #testimonials .quote:hover .intro::after{
+  content: '';
+}
+
+/*more text*/
+#myart .quote .more, #testimonials .customer {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#myart .quote:hover .more{
+/*  font-family: "Open Sans", sans-serif;*/
+  font-weight: 101;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#myart .quote:hover .testspan{
+    opacity: 0;
+   
+}
+
+#myart .quote:hover .customer{
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#myart .quote .intro::after {
+  content: '...';
+}
+
+#myart .quote:hover .intro::after{
   content: '';
 }
 
