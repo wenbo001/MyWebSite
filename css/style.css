@@ -541,6 +541,19 @@ header .inbody .navbar-brand span.subhead {
     display: none;
 }
 
+/*link 6*/
+#blockquotef :hover #testspanf{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#blockquotef #testspanf {
+    display: none;
+}
 
 /*more text*/
 #testimonials .quote .more, #testimonials .customer {
