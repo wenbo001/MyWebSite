@@ -554,7 +554,29 @@ header .inbody .navbar-brand span.subhead {
 #blockquotef #testspanf {
     display: none;
 }
-
+#blockquoteg :hover #testspang{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#blockquoteg #testspang {
+    display: none;
+}#blockquoteh :hover #testspanh{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 500;
+    opacity: 1; /* added */
+}
+#blockquoteh #testspanh {
+    display: none;
+}
 /*more text*/
 #testimonials .quote .more, #testimonials .customer {
   opacity: 0;
